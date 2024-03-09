@@ -9,7 +9,7 @@ import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.exceptions.SimpleCommandExceptionType;
 import com.mojang.brigadier.tree.CommandNode;
 import com.natamus.collective.functions.NumberFunctions;
-import com.natamus.collective.functions.StringFunctions;
+import com.natamus.collective.functions.MessageFunctions;
 import com.natamus.compacthelpcommand.config.ConfigHandler;
 import net.minecraft.ChatFormatting;
 import net.minecraft.commands.CommandSourceStack;
@@ -51,7 +51,7 @@ public class CommandHelp {
 				} else {
 					Map<CommandNode<CommandSourceStack>, String> commandNodeMap = dispatcher.getSmartUsage((Iterables.getLast(parseResults.getContext().getNodes())).getNode(), command.getSource());
 
-					StringFunctions.sendMessage(command.getSource(), " ", ChatFormatting.WHITE);
+					MessageFunctions.sendMessage(command.getSource(), " ", ChatFormatting.WHITE);
 					for (String nextStringVar : commandNodeMap.values()) {
 						command.getSource().sendSuccess(() -> {
 							String stringCommand = parseResults.getReader().getString();
@@ -101,7 +101,7 @@ public class CommandHelp {
 			page = totalpages;
 		}
 
-		StringFunctions.sendMessage(commandSourceStack, " ", ChatFormatting.WHITE);
+		MessageFunctions.sendMessage(commandSourceStack, " ", ChatFormatting.WHITE);
 
 		for (int n = 0; n < ((amountperpage * page)); n++) {
 			if (n >= ((amountperpage * page) - amountperpage)) {
@@ -134,7 +134,7 @@ public class CommandHelp {
 			}
 		}
 
-		StringFunctions.sendMessage(commandSourceStack, " Page " + page + " / " + totalpages + ", /help <page>", ChatFormatting.YELLOW);
+		MessageFunctions.sendMessage(commandSourceStack, " Page " + page + " / " + totalpages + ", /help <page>", ChatFormatting.YELLOW);
 		return 1;
 	}
 }
