@@ -1,6 +1,7 @@
 package com.natamus.compacthelpcommand;
 
 import com.natamus.collective.check.RegisterMod;
+import com.natamus.collective.check.ShouldLoadCheck;
 import com.natamus.compacthelpcommand.neoforge.config.IntegrateNeoForgeConfig;
 import com.natamus.compacthelpcommand.neoforge.events.NeoForgeCommandRegisterEvent;
 import com.natamus.compacthelpcommand.util.Reference;
@@ -14,6 +15,10 @@ import net.neoforged.fml.event.lifecycle.FMLLoadCompleteEvent;
 public class ModNeoForge {
 	
 	public ModNeoForge(IEventBus modEventBus) {
+		if (!ShouldLoadCheck.shouldLoad(Reference.MOD_ID)) {
+			return;
+		}
+
 		modEventBus.addListener(this::loadComplete);
 
 		setGlobalConstants();
