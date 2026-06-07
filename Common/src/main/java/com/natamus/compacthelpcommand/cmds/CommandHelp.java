@@ -135,7 +135,7 @@ public class CommandHelp {
 			}
 		}
 
-		MessageFunctions.sendMessage(commandSourceStack, " Page " + page + " / " + totalpages + ", /help <page>", ChatFormatting.YELLOW);
+		MessageFunctions.sendTranslatableMessage(commandSourceStack, " ", "collective.compacthelpcommand.message.pagehelppage", ChatFormatting.YELLOW, page, totalpages);
 		return 1;
 	}
 }
