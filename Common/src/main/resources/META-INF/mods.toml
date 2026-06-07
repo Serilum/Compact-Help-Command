@@ -6,7 +6,7 @@ logoFile="icon.png"
 
 [[mods]]
 modId="compacthelpcommand"
-version="2.8"
+version="2.9"
 displayName="Compact Help Command"
 displayURL="https://serilum.com/mod/compact-help-command"
 authors="Rick South"
@@ -14,7 +14,7 @@ description='''Modifies the standard /help command to be colourful and have mult
 '''
 credits='''Thank you very much to my Membership sponsors for supporting the development of this mod:  
 
-akanealw, Alister, Andrean Olgo, aternosorg, Cherriesaurus, MWS, t128, Tyler Behl, XAgent, ตัวตรึง พระนคร   
+Andrean Olgo, aternosorg, Cherriesaurus, Linda Jansen, Michelle Smith, MWS, Tyler Behl   
 
 If you would like to contribute too, check out https://serilum.com/donate. Appreciate it! <3   
 '''
@@ -22,7 +22,7 @@ If you would like to contribute too, check out https://serilum.com/donate. Appre
 [[dependencies.compacthelpcommand]]
     modId="collective"
     mandatory=true
-    versionRange="[8.17,)"
+    versionRange="[8.25,)"
     ordering="NONE"
     side="BOTH"
 
