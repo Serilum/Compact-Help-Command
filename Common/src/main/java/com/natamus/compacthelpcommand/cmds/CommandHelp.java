@@ -8,13 +8,13 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.exceptions.SimpleCommandExceptionType;
 import com.mojang.brigadier.tree.CommandNode;
+import com.natamus.collective.functions.ColourFunctions;
 import com.natamus.collective.functions.NumberFunctions;
 import com.natamus.collective.functions.MessageFunctions;
 import com.natamus.compacthelpcommand.config.ConfigHandler;
 import net.minecraft.ChatFormatting;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
-import net.minecraft.server.permissions.Permissions;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 
@@ -26,8 +26,8 @@ import java.util.Map;
 public class CommandHelp {
 	private static final SimpleCommandExceptionType ERROR_FAILED = new SimpleCommandExceptionType(Component.translatable("commands.help.failed"));
 
-	private static final ChatFormatting commandcolour = ChatFormatting.getById(ConfigHandler.commandColour);
-	private static final ChatFormatting subcommandcolour = ChatFormatting.getById(ConfigHandler.subcommandColour);
+	private static final ChatFormatting commandcolour = ColourFunctions.getById(ConfigHandler.commandColour);
+	private static final ChatFormatting subcommandcolour = ColourFunctions.getById(ConfigHandler.subcommandColour);
 
 	public static void register(CommandDispatcher<CommandSourceStack> dispatcher) {
 		dispatcher.register(Commands.literal("help")
