@@ -1,6 +1,6 @@
-package com.natamus.compacthelpcommand.neoforge.events;
+package com.serilum.compacthelpcommand.neoforge.events;
 
-import com.natamus.compacthelpcommand.cmds.CommandHelp;
+import com.serilum.compacthelpcommand.cmds.CommandHelp;
 import net.neoforged.neoforge.event.RegisterCommandsEvent;
 import net.neoforged.bus.api.SubscribeEvent;
 

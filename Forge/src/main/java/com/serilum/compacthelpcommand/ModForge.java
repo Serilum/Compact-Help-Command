@@ -1,10 +1,10 @@
-package com.natamus.compacthelpcommand;
+package com.serilum.compacthelpcommand;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.compacthelpcommand.forge.config.IntegrateForgeConfig;
-import com.natamus.compacthelpcommand.forge.events.ForgeCommandRegisterEvent;
-import com.natamus.compacthelpcommand.util.Reference;
+import com.serilum.compacthelpcommand.forge.config.IntegrateForgeConfig;
+import com.serilum.compacthelpcommand.forge.events.ForgeCommandRegisterEvent;
+import com.serilum.compacthelpcommand.util.Reference;
 import net.minecraftforge.eventbus.api.bus.BusGroup;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;

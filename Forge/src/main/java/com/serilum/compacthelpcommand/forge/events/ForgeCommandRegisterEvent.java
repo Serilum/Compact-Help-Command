@@ -1,6 +1,6 @@
-package com.natamus.compacthelpcommand.forge.events;
+package com.serilum.compacthelpcommand.forge.events;
 
-import com.natamus.compacthelpcommand.cmds.CommandHelp;
+import com.serilum.compacthelpcommand.cmds.CommandHelp;
 import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.eventbus.api.bus.BusGroup;
 import net.minecraftforge.eventbus.api.listener.SubscribeEvent;
@@ -14,8 +14,8 @@ public class ForgeCommandRegisterEvent {
 		RegisterCommandsEvent.BUS.addListener(ForgeCommandRegisterEvent::registerCommands);
 	}
 
-    @SubscribeEvent
-    public static void registerCommands(RegisterCommandsEvent e) {
-    	CommandHelp.register(e.getDispatcher());
-    }
+	@SubscribeEvent
+	public static void registerCommands(RegisterCommandsEvent e) {
+		CommandHelp.register(e.getDispatcher());
+	}
 }
