@@ -1,4 +1,4 @@
-package com.natamus.compacthelpcommand.cmds;
+package com.serilum.compacthelpcommand.cmds;
 
 import com.google.common.collect.Iterables;
 import com.mojang.brigadier.CommandDispatcher;
@@ -10,7 +10,7 @@ import com.mojang.brigadier.exceptions.SimpleCommandExceptionType;
 import com.mojang.brigadier.tree.CommandNode;
 import com.natamus.collective.functions.NumberFunctions;
 import com.natamus.collective.functions.MessageFunctions;
-import com.natamus.compacthelpcommand.config.ConfigHandler;
+import com.serilum.compacthelpcommand.config.ConfigHandler;
 import net.minecraft.ChatFormatting;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
@@ -45,7 +45,7 @@ public class CommandHelp {
 					return processHelpCommands(dispatcher, command, Integer.parseInt(fakecommand), command.getSource());
 				}
 
-	 			ParseResults<CommandSourceStack> parseResults = dispatcher.parse(StringArgumentType.getString(command, "command"), command.getSource());
+				ParseResults<CommandSourceStack> parseResults = dispatcher.parse(StringArgumentType.getString(command, "command"), command.getSource());
 				if (parseResults.getContext().getNodes().isEmpty()) {
 					throw ERROR_FAILED.create();
 				} else {

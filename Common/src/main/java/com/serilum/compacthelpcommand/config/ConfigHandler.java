@@ -1,7 +1,7 @@
-package com.natamus.compacthelpcommand.config;
+package com.serilum.compacthelpcommand.config;
 
 import com.natamus.collective.config.DuskConfig;
-import com.natamus.compacthelpcommand.util.Reference;
+import com.serilum.compacthelpcommand.util.Reference;
 
 import java.util.Arrays;
 import java.util.HashMap;
