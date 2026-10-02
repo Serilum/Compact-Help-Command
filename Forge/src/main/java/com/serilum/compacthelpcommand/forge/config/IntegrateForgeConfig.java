@@ -1,7 +1,7 @@
-package com.natamus.compacthelpcommand.forge.config;
+package com.serilum.compacthelpcommand.forge.config;
 
 import com.natamus.collective.config.DuskConfig;
-import com.natamus.compacthelpcommand.util.Reference;
+import com.serilum.compacthelpcommand.util.Reference;
 import net.minecraftforge.client.ConfigScreenHandler;
 import net.minecraftforge.fml.ModLoadingContext;
 

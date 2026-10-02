@@ -1,6 +1,6 @@
-package com.natamus.compacthelpcommand;
+package com.serilum.compacthelpcommand;
 
-import com.natamus.compacthelpcommand.config.ConfigHandler;
+import com.serilum.compacthelpcommand.config.ConfigHandler;
 
 public class ModCommon {
 

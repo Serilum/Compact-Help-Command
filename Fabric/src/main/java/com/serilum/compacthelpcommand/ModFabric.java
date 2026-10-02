@@ -1,9 +1,9 @@
-package com.natamus.compacthelpcommand;
+package com.serilum.compacthelpcommand;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.compacthelpcommand.cmds.CommandHelp;
-import com.natamus.compacthelpcommand.util.Reference;
+import com.serilum.compacthelpcommand.cmds.CommandHelp;
+import com.serilum.compacthelpcommand.util.Reference;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 
