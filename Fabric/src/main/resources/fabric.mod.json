@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "compacthelpcommand",
-  "version": "3.0",
+  "version": "3.1",
 
   "name": "Compact Help Command",
   "description": "Modifies the standard /help command to be colourful and have multiple pages.",
@@ -23,13 +23,13 @@
     "fabric-api": "*",
     "minecraft": ">=26.2",
     "java": ">=25",
-    "collective": ">=8.40"
+    "collective": ">=8.57"
   },
 
   "custom": {
     "modmenu": {
       "links": {
-        "Donate <3" : "https://serilum.com/donate"
+        "❤ Patreon" : "https://link.serilum.com/patreon"
       }
     }
   },
@@ -41,7 +41,6 @@
 	  "If you would like to contribute too, check out https://serilum.com/donate",
 	  " ",
 	  "Membership sponsors:",
-	  " Andrean Olgo",
 	  " AnyankaT",
 	  " aternosorg",
 	  " Cherriesaurus",
