@@ -26,9 +26,6 @@ import java.util.Map;
 public class CommandHelp {
 	private static final SimpleCommandExceptionType ERROR_FAILED = new SimpleCommandExceptionType(Component.translatable("commands.help.failed"));
 
-	private static final ChatFormatting commandcolour = ColourFunctions.getById(ConfigHandler.commandColour);
-	private static final ChatFormatting subcommandcolour = ColourFunctions.getById(ConfigHandler.subcommandColour);
-
 	public static void register(CommandDispatcher<CommandSourceStack> dispatcher) {
 		dispatcher.register(Commands.literal("help")
 			.executes((command) -> {
@@ -65,11 +62,11 @@ public class CommandHelp {
 							MutableComponent tc = Component.literal("");
 
 							MutableComponent tc0 = Component.literal("/" + stringCommand + " ");
-							tc0.withStyle(commandcolour);
+							tc0.withStyle(ColourFunctions.getById(ConfigHandler.commandColour));
 							tc.append(tc0);
 
 							MutableComponent tc1 = Component.literal(csuffix);
-							tc1.withStyle(subcommandcolour);
+							tc1.withStyle(ColourFunctions.getById(ConfigHandler.subcommandColour));
 							tc.append(tc1);
 							return tc;
 						}, false);
@@ -123,11 +120,11 @@ public class CommandHelp {
 					MutableComponent tc = Component.literal("");
 
 					MutableComponent tc0 = Component.literal(acmd);
-					tc0.withStyle(commandcolour);
+					tc0.withStyle(ColourFunctions.getById(ConfigHandler.commandColour));
 					tc.append(tc0);
 
 					MutableComponent tc1 = Component.literal(csuffix);
-					tc1.withStyle(subcommandcolour);
+					tc1.withStyle(ColourFunctions.getById(ConfigHandler.subcommandColour));
 					tc.append(tc1);
 
 					return tc;
